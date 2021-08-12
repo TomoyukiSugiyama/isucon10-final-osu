@@ -1,0 +1,1061 @@
+ 15:11:55 up  9:27,  2 users,  load average: 0.07, 0.02, 0.00
+==========
+Fatal: can't open lock file /run/xtables.lock: Permission denied
+==========
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        30G  6.8G   23G  24% /
+devtmpfs        970M     0  970M   0% /dev
+tmpfs           975M  4.0K  975M   1% /dev/shm
+tmpfs           195M  812K  195M   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           975M     0  975M   0% /sys/fs/cgroup
+/dev/loop0       34M   34M     0 100% /snap/amazon-ssm-agent/3552
+/dev/loop1       71M   71M     0 100% /snap/lxd/19647
+/dev/loop2       56M   56M     0 100% /snap/core18/1997
+/dev/loop3       33M   33M     0 100% /snap/snapd/11588
+/dev/loop4       91M   91M     0 100% /snap/go/7360
+/dev/loop5       33M   33M     0 100% /snap/snapd/12704
+/dev/loop6       56M   56M     0 100% /snap/core18/2128
+/dev/loop7       25M   25M     0 100% /snap/amazon-ssm-agent/4046
+/dev/loop8       71M   71M     0 100% /snap/lxd/21029
+/dev/loop9       91M   91M     0 100% /snap/go/7954
+tmpfs           195M     0  195M   0% /run/user/1000
+==========
+top - 15:11:56 up  9:27,  2 users,  load average: 0.07, 0.02, 0.00
+Tasks: 119 total,   1 running, 118 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1949.8 total,    544.8 free,    860.0 used,    545.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    927.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  105764  11468   6472 S   0.0   0.6   0:11.55 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.01 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+
+     10 root      20   0       0      0      0 S   0.0   0.0   0:00.72 ksoftir+
+     11 root      20   0       0      0      0 I   0.0   0.0   0:01.40 rcu_sch+
+     12 root      rt   0       0      0      0 S   0.0   0.0   0:00.16 migrati+
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     14 root      20   0       0      0      0 S   0.0   0.0   0:00.01 cpuhp/1
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.20 migrati+
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.97 ksoftir+
+     18 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmp+
+     20 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+
+     22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd
+     23 root      20   0       0      0      0 S   0.0   0.0   0:00.01 khungta+
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_rea+
+     25 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeba+
+     26 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kcompac+
+     27 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
+     28 root      39  19       0      0      0 S   0.0   0.0   0:00.01 khugepa+
+     74 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegr+
+     75 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd
+     76 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_p+
+     77 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 tpm_dev+
+     78 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ata_sff
+     79 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 md
+     80 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 edac-po+
+     81 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 devfreq+
+     82 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 watchdo+
+     86 root      20   0       0      0      0 S   0.0   0.0   2:19.73 kswapd0
+     87 root      20   0       0      0      0 S   0.0   0.0   0:00.00 ecryptf+
+     89 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kthrotld
+     90 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-wq
+     91 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-re+
+     92 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-de+
+     94 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ipv6_ad+
+    105 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kstrp
+    108 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+    122 root      20   0       0      0      0 S   0.0   0.0   0:00.70 jbd2/nv+
+    123 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ext4-rs+
+    147 root       0 -20       0      0      0 I   0.0   0.0   0:00.33 kworker+
+    148 root       0 -20       0      0      0 I   0.0   0.0   0:00.27 kworker+
+    164 root      19  -1  108912  24032  22704 S   0.0   1.2   0:04.27 systemd+
+    196 root      20   0   19436   4528   2604 S   0.0   0.2   0:02.34 systemd+
+    229 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ena
+    230 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 cryptd
+    285 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kaluad
+    286 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpath_+
+    287 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpathd
+    288 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpath_+
+    289 root      rt   0  280136  17940   8200 S   0.0   0.9   0:03.19 multipa+
+    298 root       0 -20       0      0      0 S   0.0   0.0   0:00.07 loop0
+    301 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop1
+    303 root       0 -20       0      0      0 S   0.0   0.0   0:00.03 loop2
+    304 root       0 -20       0      0      0 S   0.0   0.0   0:00.06 loop3
+    305 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop4
+    360 systemd+  20   0   90228   3232   2392 S   0.0   0.2   0:00.13 systemd+
+    401 systemd+  20   0   26728   3848   2872 S   0.0   0.2   0:00.22 systemd+
+    404 systemd+  20   0   23892   8672   4624 S   0.0   0.4   0:00.43 systemd+
+    493 root      20   0  241308   5576   4268 S   0.0   0.3   0:01.41 account+
+    496 root      20   0    2540    676    612 S   0.0   0.0   0:00.00 acpid
+    499 root      20   0    8536   2516   2240 S   0.0   0.1   0:00.05 cron
+    500 message+  20   0    7536   4384   3604 S   0.0   0.2   0:01.22 dbus-da+
+    506 isucon    20   0 2250156  25076  10052 S   0.0   1.3   0:56.03 envoy
+    509 root      20   0   81828   2664   2344 S   0.0   0.1   0:00.86 irqbala+
+    513 root      20   0   29264  10972   3308 S   0.0   0.5   0:00.10 network+
+    516 syslog    20   0  224500   4068   2876 S   0.0   0.2   0:01.30 rsyslogd
+    520 root      20   0   10392   3676   2748 S   0.0   0.2   0:00.03 smartd
+    524 root      20   0   16792   5400   4480 S   0.0   0.3   0:00.59 systemd+
+    528 daemon    20   0    3792   2144   1964 S   0.0   0.1   0:00.01 atd
+    543 prometh+  20   0  485796   2448   1016 S   0.0   0.1   0:00.05 prometh+
+    547 root      20   0    7352   1668   1544 S   0.0   0.1   0:00.01 agetty
+    559 root      20   0    5828   1680   1564 S   0.0   0.1   0:00.44 agetty
+    581 root      20   0  108100  10908   3220 S   0.0   0.5   0:00.09 unatten+
+    591 root      20   0  236308   3928   3012 S   0.0   0.2   0:00.12 polkitd
+    701 root      20   0   12176   4760   3836 S   0.0   0.2   0:00.41 sshd
+    855 mysql     20   0 1807900 446368   7000 S   0.0  22.4   1:20.19 mysqld
+   1069 root       0 -20       0      0      0 S   0.0   0.0   0:05.96 loop5
+   1132 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop6
+   1174 root      20   0 1009724  29460   8688 S   0.0   1.5   0:45.98 snapd
+   1434 root       0 -20       0      0      0 S   0.0   0.0   0:12.49 loop7
+   1635 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop8
+   1702 root      20   0 1382872   8936   1572 S   0.0   0.4   0:49.73 amazon-+
+   1916 root      20   0 1321532  15316   1824 S   0.0   0.8   0:23.11 ssm-age+
+   1940 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop9
+   2561 isucon    20   0 1128540  51876      0 S   0.0   2.6   0:23.50 ruby
+   2562 isucon    20   0  116272  42856   4572 S   0.0   2.1   0:02.07 bundle
+   3701 root      20   0    2488    584    524 S   0.0   0.0   0:00.00 none
+   4951 isucon    20   0 1178004  88904   8320 S   0.0   4.5   0:03.03 bundle
+   4952 isucon    20   0 1177288  85432   8488 S   0.0   4.3   0:02.93 bundle
+  17536 root      20   0       0      0      0 I   0.0   0.0   0:00.21 kworker+
+  19599 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker+
+  20526 root      20   0       0      0      0 I   0.0   0.0   0:00.02 kworker+
+  20534 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20573 root      20   0   13796   8908   7464 S   0.0   0.4   0:00.02 sshd
+  20591 ubuntu    20   0   18248   9344   7920 S   0.0   0.5   0:00.08 systemd
+  20592 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker+
+  20594 ubuntu    20   0  106980   5148      0 S   0.0   0.3   0:00.00 (sd-pam)
+  20671 ubuntu    20   0   13932   5984   4516 S   0.0   0.3   0:00.00 sshd
+  20672 ubuntu    20   0   10180   5392   3604 S   0.0   0.3   0:00.04 bash
+  20690 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20704 root      20   0   13800   8964   7516 S   0.0   0.4   0:00.01 sshd
+  20800 ubuntu    20   0   13936   6056   4560 S   0.0   0.3   0:00.08 sshd
+  20819 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20820 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20881 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  21180 root      20   0  283808  15724  13816 S   0.0   0.8   0:00.02 package+
+  21301 ubuntu    20   0    2608    548    476 S   0.0   0.0   0:00.00 sh
+  21302 root      20   0   11328   4840   4116 S   0.0   0.2   0:00.00 sudo
+  21303 isucon    20   0    2608    604    540 S   0.0   0.0   0:00.00 sh
+  21304 isucon    20   0   29236  18500   9508 S   0.0   0.9   0:00.13 python3
+  21306 isucon    20   0    2608    544    476 S   0.0   0.0   0:00.00 sh
+  21307 isucon    20   0    8616   3316   3060 S   0.0   0.2   0:00.00 initial+
+  21309 root      20   0   19436   3608   1668 S   0.0   0.2   0:00.00 systemd+
+  21312 isucon    20   0   10872   3740   3288 R   0.0   0.2   0:00.00 top
+
+top - 15:12:01 up  9:27,  2 users,  load average: 0.06, 0.02, 0.00
+Tasks: 118 total,   1 running, 117 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.3 us,  0.1 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.1 st
+MiB Mem :   1949.8 total,    544.5 free,    860.3 used,    545.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    927.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    506 isucon    20   0 2250156  25076  10052 S   0.2   1.3   0:56.04 envoy
+    855 mysql     20   0 1807900 446368   7000 S   0.2  22.4   1:20.20 mysqld
+      1 root      20   0  105764  11468   6472 S   0.0   0.6   0:11.55 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.01 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+
+     10 root      20   0       0      0      0 S   0.0   0.0   0:00.72 ksoftir+
+     11 root      20   0       0      0      0 I   0.0   0.0   0:01.40 rcu_sch+
+     12 root      rt   0       0      0      0 S   0.0   0.0   0:00.16 migrati+
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     14 root      20   0       0      0      0 S   0.0   0.0   0:00.01 cpuhp/1
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.20 migrati+
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.97 ksoftir+
+     18 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmp+
+     20 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+
+     22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd
+     23 root      20   0       0      0      0 S   0.0   0.0   0:00.01 khungta+
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_rea+
+     25 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeba+
+     26 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kcompac+
+     27 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
+     28 root      39  19       0      0      0 S   0.0   0.0   0:00.01 khugepa+
+     74 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegr+
+     75 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd
+     76 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_p+
+     77 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 tpm_dev+
+     78 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ata_sff
+     79 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 md
+     80 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 edac-po+
+     81 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 devfreq+
+     82 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 watchdo+
+     86 root      20   0       0      0      0 S   0.0   0.0   2:19.73 kswapd0
+     87 root      20   0       0      0      0 S   0.0   0.0   0:00.00 ecryptf+
+     89 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kthrotld
+     90 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-wq
+     91 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-re+
+     92 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-de+
+     94 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ipv6_ad+
+    105 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kstrp
+    108 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+    122 root      20   0       0      0      0 S   0.0   0.0   0:00.70 jbd2/nv+
+    123 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ext4-rs+
+    147 root       0 -20       0      0      0 I   0.0   0.0   0:00.33 kworker+
+    148 root       0 -20       0      0      0 I   0.0   0.0   0:00.27 kworker+
+    164 root      19  -1  108912  24032  22704 S   0.0   1.2   0:04.27 systemd+
+    196 root      20   0   19436   4528   2604 S   0.0   0.2   0:02.34 systemd+
+    229 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ena
+    230 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 cryptd
+    285 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kaluad
+    286 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpath_+
+    287 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpathd
+    288 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpath_+
+    289 root      rt   0  280136  17940   8200 S   0.0   0.9   0:03.19 multipa+
+    298 root       0 -20       0      0      0 S   0.0   0.0   0:00.07 loop0
+    301 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop1
+    303 root       0 -20       0      0      0 S   0.0   0.0   0:00.03 loop2
+    304 root       0 -20       0      0      0 S   0.0   0.0   0:00.06 loop3
+    305 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop4
+    360 systemd+  20   0   90228   3232   2392 S   0.0   0.2   0:00.13 systemd+
+    401 systemd+  20   0   26728   3848   2872 S   0.0   0.2   0:00.22 systemd+
+    404 systemd+  20   0   23892   8672   4624 S   0.0   0.4   0:00.43 systemd+
+    493 root      20   0  241308   5576   4268 S   0.0   0.3   0:01.41 account+
+    496 root      20   0    2540    676    612 S   0.0   0.0   0:00.00 acpid
+    499 root      20   0    8536   2516   2240 S   0.0   0.1   0:00.05 cron
+    500 message+  20   0    7536   4384   3604 S   0.0   0.2   0:01.22 dbus-da+
+    509 root      20   0   81828   2664   2344 S   0.0   0.1   0:00.86 irqbala+
+    513 root      20   0   29264  10972   3308 S   0.0   0.5   0:00.10 network+
+    516 syslog    20   0  224500   4068   2876 S   0.0   0.2   0:01.30 rsyslogd
+    520 root      20   0   10392   3676   2748 S   0.0   0.2   0:00.03 smartd
+    524 root      20   0   16792   5400   4480 S   0.0   0.3   0:00.59 systemd+
+    528 daemon    20   0    3792   2144   1964 S   0.0   0.1   0:00.01 atd
+    543 prometh+  20   0  485796   2448   1016 S   0.0   0.1   0:00.05 prometh+
+    547 root      20   0    7352   1668   1544 S   0.0   0.1   0:00.01 agetty
+    559 root      20   0    5828   1680   1564 S   0.0   0.1   0:00.44 agetty
+    581 root      20   0  108100  10908   3220 S   0.0   0.5   0:00.09 unatten+
+    591 root      20   0  236308   3928   3012 S   0.0   0.2   0:00.12 polkitd
+    701 root      20   0   12176   4760   3836 S   0.0   0.2   0:00.41 sshd
+   1069 root       0 -20       0      0      0 S   0.0   0.0   0:05.96 loop5
+   1132 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop6
+   1174 root      20   0 1009724  29460   8688 S   0.0   1.5   0:45.98 snapd
+   1434 root       0 -20       0      0      0 S   0.0   0.0   0:12.49 loop7
+   1635 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop8
+   1702 root      20   0 1382872   8936   1572 S   0.0   0.4   0:49.73 amazon-+
+   1916 root      20   0 1321532  15316   1824 S   0.0   0.8   0:23.11 ssm-age+
+   1940 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop9
+   2561 isucon    20   0 1128540  51876      0 S   0.0   2.6   0:23.50 ruby
+   2562 isucon    20   0  116272  42856   4572 S   0.0   2.1   0:02.07 bundle
+   3701 root      20   0    2488    584    524 S   0.0   0.0   0:00.00 none
+   4951 isucon    20   0 1178004  88904   8320 S   0.0   4.5   0:03.03 bundle
+   4952 isucon    20   0 1177288  85432   8488 S   0.0   4.3   0:02.93 bundle
+  17536 root      20   0       0      0      0 I   0.0   0.0   0:00.21 kworker+
+  19599 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker+
+  20526 root      20   0       0      0      0 I   0.0   0.0   0:00.02 kworker+
+  20534 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20573 root      20   0   13796   8908   7464 S   0.0   0.4   0:00.02 sshd
+  20591 ubuntu    20   0   18248   9344   7920 S   0.0   0.5   0:00.08 systemd
+  20592 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker+
+  20594 ubuntu    20   0  106980   5148      0 S   0.0   0.3   0:00.00 (sd-pam)
+  20671 ubuntu    20   0   13932   5984   4516 S   0.0   0.3   0:00.00 sshd
+  20672 ubuntu    20   0   10180   5392   3604 S   0.0   0.3   0:00.04 bash
+  20690 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20704 root      20   0   13800   8964   7516 S   0.0   0.4   0:00.01 sshd
+  20800 ubuntu    20   0   13936   6056   4560 S   0.0   0.3   0:00.08 sshd
+  20819 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20820 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20881 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  21180 root      20   0  283808  15724  13816 S   0.0   0.8   0:00.02 package+
+  21301 ubuntu    20   0    2608    548    476 S   0.0   0.0   0:00.00 sh
+  21302 root      20   0   11328   4840   4116 S   0.0   0.2   0:00.00 sudo
+  21303 isucon    20   0    2608    604    540 S   0.0   0.0   0:00.00 sh
+  21304 isucon    20   0   29236  18500   9508 S   0.0   0.9   0:00.13 python3
+  21306 isucon    20   0    2608    544    476 S   0.0   0.0   0:00.00 sh
+  21307 isucon    20   0    8616   3316   3060 S   0.0   0.2   0:00.00 initial+
+  21312 isucon    20   0   10872   3740   3288 R   0.0   0.2   0:00.00 top
+
+top - 15:12:06 up  9:27,  2 users,  load average: 0.06, 0.01, 0.00
+Tasks: 118 total,   1 running, 117 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.2 us,  0.1 sy,  0.0 ni, 99.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.1 st
+MiB Mem :   1949.8 total,    544.5 free,    860.3 used,    545.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    927.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    506 isucon    20   0 2250156  25076  10052 S   0.2   1.3   0:56.05 envoy
+    855 mysql     20   0 1807900 446368   7000 S   0.2  22.4   1:20.21 mysqld
+   4952 isucon    20   0 1177288  85432   8488 S   0.2   4.3   0:02.94 bundle
+      1 root      20   0  105764  11468   6472 S   0.0   0.6   0:11.55 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.01 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+
+     10 root      20   0       0      0      0 S   0.0   0.0   0:00.72 ksoftir+
+     11 root      20   0       0      0      0 I   0.0   0.0   0:01.40 rcu_sch+
+     12 root      rt   0       0      0      0 S   0.0   0.0   0:00.16 migrati+
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     14 root      20   0       0      0      0 S   0.0   0.0   0:00.01 cpuhp/1
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.20 migrati+
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.97 ksoftir+
+     18 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmp+
+     20 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+
+     22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd
+     23 root      20   0       0      0      0 S   0.0   0.0   0:00.01 khungta+
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_rea+
+     25 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeba+
+     26 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kcompac+
+     27 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
+     28 root      39  19       0      0      0 S   0.0   0.0   0:00.01 khugepa+
+     74 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegr+
+     75 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd
+     76 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_p+
+     77 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 tpm_dev+
+     78 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ata_sff
+     79 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 md
+     80 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 edac-po+
+     81 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 devfreq+
+     82 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 watchdo+
+     86 root      20   0       0      0      0 S   0.0   0.0   2:19.73 kswapd0
+     87 root      20   0       0      0      0 S   0.0   0.0   0:00.00 ecryptf+
+     89 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kthrotld
+     90 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-wq
+     91 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-re+
+     92 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-de+
+     94 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ipv6_ad+
+    105 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kstrp
+    108 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+    122 root      20   0       0      0      0 S   0.0   0.0   0:00.70 jbd2/nv+
+    123 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ext4-rs+
+    147 root       0 -20       0      0      0 I   0.0   0.0   0:00.33 kworker+
+    148 root       0 -20       0      0      0 I   0.0   0.0   0:00.27 kworker+
+    164 root      19  -1  108912  24032  22704 S   0.0   1.2   0:04.27 systemd+
+    196 root      20   0   19436   4528   2604 S   0.0   0.2   0:02.34 systemd+
+    229 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ena
+    230 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 cryptd
+    285 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kaluad
+    286 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpath_+
+    287 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpathd
+    288 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpath_+
+    289 root      rt   0  280136  17940   8200 S   0.0   0.9   0:03.19 multipa+
+    298 root       0 -20       0      0      0 S   0.0   0.0   0:00.07 loop0
+    301 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop1
+    303 root       0 -20       0      0      0 S   0.0   0.0   0:00.03 loop2
+    304 root       0 -20       0      0      0 S   0.0   0.0   0:00.06 loop3
+    305 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop4
+    360 systemd+  20   0   90228   3232   2392 S   0.0   0.2   0:00.13 systemd+
+    401 systemd+  20   0   26728   3848   2872 S   0.0   0.2   0:00.22 systemd+
+    404 systemd+  20   0   23892   8672   4624 S   0.0   0.4   0:00.43 systemd+
+    493 root      20   0  241308   5576   4268 S   0.0   0.3   0:01.41 account+
+    496 root      20   0    2540    676    612 S   0.0   0.0   0:00.00 acpid
+    499 root      20   0    8536   2516   2240 S   0.0   0.1   0:00.05 cron
+    500 message+  20   0    7536   4384   3604 S   0.0   0.2   0:01.22 dbus-da+
+    509 root      20   0   81828   2664   2344 S   0.0   0.1   0:00.86 irqbala+
+    513 root      20   0   29264  10972   3308 S   0.0   0.5   0:00.10 network+
+    516 syslog    20   0  224500   4068   2876 S   0.0   0.2   0:01.30 rsyslogd
+    520 root      20   0   10392   3676   2748 S   0.0   0.2   0:00.03 smartd
+    524 root      20   0   16792   5400   4480 S   0.0   0.3   0:00.59 systemd+
+    528 daemon    20   0    3792   2144   1964 S   0.0   0.1   0:00.01 atd
+    543 prometh+  20   0  485796   2448   1016 S   0.0   0.1   0:00.05 prometh+
+    547 root      20   0    7352   1668   1544 S   0.0   0.1   0:00.01 agetty
+    559 root      20   0    5828   1680   1564 S   0.0   0.1   0:00.44 agetty
+    581 root      20   0  108100  10908   3220 S   0.0   0.5   0:00.09 unatten+
+    591 root      20   0  236308   3928   3012 S   0.0   0.2   0:00.12 polkitd
+    701 root      20   0   12176   4760   3836 S   0.0   0.2   0:00.41 sshd
+   1069 root       0 -20       0      0      0 S   0.0   0.0   0:05.96 loop5
+   1132 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop6
+   1174 root      20   0 1009724  29460   8688 S   0.0   1.5   0:45.98 snapd
+   1434 root       0 -20       0      0      0 S   0.0   0.0   0:12.49 loop7
+   1635 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop8
+   1702 root      20   0 1382872   8936   1572 S   0.0   0.4   0:49.73 amazon-+
+   1916 root      20   0 1321532  15316   1824 S   0.0   0.8   0:23.11 ssm-age+
+   1940 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop9
+   2561 isucon    20   0 1128540  51876      0 S   0.0   2.6   0:23.50 ruby
+   2562 isucon    20   0  116272  42856   4572 S   0.0   2.1   0:02.07 bundle
+   3701 root      20   0    2488    584    524 S   0.0   0.0   0:00.00 none
+   4951 isucon    20   0 1178004  88904   8320 S   0.0   4.5   0:03.03 bundle
+  17536 root      20   0       0      0      0 I   0.0   0.0   0:00.21 kworker+
+  19599 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker+
+  20526 root      20   0       0      0      0 I   0.0   0.0   0:00.02 kworker+
+  20534 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20573 root      20   0   13796   8908   7464 S   0.0   0.4   0:00.02 sshd
+  20591 ubuntu    20   0   18248   9344   7920 S   0.0   0.5   0:00.08 systemd
+  20592 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker+
+  20594 ubuntu    20   0  106980   5148      0 S   0.0   0.3   0:00.00 (sd-pam)
+  20671 ubuntu    20   0   13932   5984   4516 S   0.0   0.3   0:00.00 sshd
+  20672 ubuntu    20   0   10180   5392   3604 S   0.0   0.3   0:00.04 bash
+  20690 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20704 root      20   0   13800   8964   7516 S   0.0   0.4   0:00.01 sshd
+  20800 ubuntu    20   0   13936   6056   4560 S   0.0   0.3   0:00.08 sshd
+  20819 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20820 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20881 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  21180 root      20   0  283808  15796  13880 S   0.0   0.8   0:00.02 package+
+  21301 ubuntu    20   0    2608    548    476 S   0.0   0.0   0:00.00 sh
+  21302 root      20   0   11328   4840   4116 S   0.0   0.2   0:00.00 sudo
+  21303 isucon    20   0    2608    604    540 S   0.0   0.0   0:00.00 sh
+  21304 isucon    20   0   29236  18500   9508 S   0.0   0.9   0:00.13 python3
+  21306 isucon    20   0    2608    544    476 S   0.0   0.0   0:00.00 sh
+  21307 isucon    20   0    8616   3316   3060 S   0.0   0.2   0:00.00 initial+
+  21312 isucon    20   0   10872   3740   3288 R   0.0   0.2   0:00.00 top
+
+top - 15:12:11 up  9:27,  2 users,  load average: 0.05, 0.01, 0.00
+Tasks: 118 total,   1 running, 117 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.1 sy,  0.0 ni, 99.6 id,  0.2 wa,  0.0 hi,  0.0 si,  0.1 st
+MiB Mem :   1949.8 total,    544.5 free,    860.2 used,    545.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    927.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    147 root       0 -20       0      0      0 I   0.2   0.0   0:00.34 kworker+
+    855 mysql     20   0 1807900 446368   7000 S   0.2  22.4   1:20.22 mysqld
+  21312 isucon    20   0   10872   3740   3288 R   0.2   0.2   0:00.01 top
+      1 root      20   0  105764  11468   6472 S   0.0   0.6   0:11.55 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.01 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+
+     10 root      20   0       0      0      0 S   0.0   0.0   0:00.72 ksoftir+
+     11 root      20   0       0      0      0 I   0.0   0.0   0:01.40 rcu_sch+
+     12 root      rt   0       0      0      0 S   0.0   0.0   0:00.16 migrati+
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     14 root      20   0       0      0      0 S   0.0   0.0   0:00.01 cpuhp/1
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.20 migrati+
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.97 ksoftir+
+     18 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmp+
+     20 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+
+     22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd
+     23 root      20   0       0      0      0 S   0.0   0.0   0:00.01 khungta+
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_rea+
+     25 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeba+
+     26 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kcompac+
+     27 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
+     28 root      39  19       0      0      0 S   0.0   0.0   0:00.01 khugepa+
+     74 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegr+
+     75 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd
+     76 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_p+
+     77 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 tpm_dev+
+     78 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ata_sff
+     79 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 md
+     80 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 edac-po+
+     81 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 devfreq+
+     82 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 watchdo+
+     86 root      20   0       0      0      0 S   0.0   0.0   2:19.73 kswapd0
+     87 root      20   0       0      0      0 S   0.0   0.0   0:00.00 ecryptf+
+     89 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kthrotld
+     90 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-wq
+     91 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-re+
+     92 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-de+
+     94 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ipv6_ad+
+    105 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kstrp
+    108 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+    122 root      20   0       0      0      0 S   0.0   0.0   0:00.70 jbd2/nv+
+    123 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ext4-rs+
+    148 root       0 -20       0      0      0 I   0.0   0.0   0:00.27 kworker+
+    164 root      19  -1  108912  24032  22704 S   0.0   1.2   0:04.27 systemd+
+    196 root      20   0   19436   4528   2604 S   0.0   0.2   0:02.34 systemd+
+    229 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ena
+    230 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 cryptd
+    285 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kaluad
+    286 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpath_+
+    287 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpathd
+    288 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpath_+
+    289 root      rt   0  280136  17940   8200 S   0.0   0.9   0:03.19 multipa+
+    298 root       0 -20       0      0      0 S   0.0   0.0   0:00.07 loop0
+    301 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop1
+    303 root       0 -20       0      0      0 S   0.0   0.0   0:00.03 loop2
+    304 root       0 -20       0      0      0 S   0.0   0.0   0:00.06 loop3
+    305 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop4
+    360 systemd+  20   0   90228   3232   2392 S   0.0   0.2   0:00.13 systemd+
+    401 systemd+  20   0   26728   3848   2872 S   0.0   0.2   0:00.22 systemd+
+    404 systemd+  20   0   23892   8672   4624 S   0.0   0.4   0:00.43 systemd+
+    493 root      20   0  241308   5576   4268 S   0.0   0.3   0:01.41 account+
+    496 root      20   0    2540    676    612 S   0.0   0.0   0:00.00 acpid
+    499 root      20   0    8536   2516   2240 S   0.0   0.1   0:00.05 cron
+    500 message+  20   0    7536   4384   3604 S   0.0   0.2   0:01.22 dbus-da+
+    506 isucon    20   0 2250156  25076  10052 S   0.0   1.3   0:56.05 envoy
+    509 root      20   0   81828   2664   2344 S   0.0   0.1   0:00.86 irqbala+
+    513 root      20   0   29264  10972   3308 S   0.0   0.5   0:00.10 network+
+    516 syslog    20   0  224500   4068   2876 S   0.0   0.2   0:01.30 rsyslogd
+    520 root      20   0   10392   3676   2748 S   0.0   0.2   0:00.03 smartd
+    524 root      20   0   16792   5400   4480 S   0.0   0.3   0:00.59 systemd+
+    528 daemon    20   0    3792   2144   1964 S   0.0   0.1   0:00.01 atd
+    543 prometh+  20   0  485796   2448   1016 S   0.0   0.1   0:00.05 prometh+
+    547 root      20   0    7352   1668   1544 S   0.0   0.1   0:00.01 agetty
+    559 root      20   0    5828   1680   1564 S   0.0   0.1   0:00.44 agetty
+    581 root      20   0  108100  10908   3220 S   0.0   0.5   0:00.09 unatten+
+    591 root      20   0  236308   3928   3012 S   0.0   0.2   0:00.12 polkitd
+    701 root      20   0   12176   4760   3836 S   0.0   0.2   0:00.41 sshd
+   1069 root       0 -20       0      0      0 S   0.0   0.0   0:05.96 loop5
+   1132 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop6
+   1174 root      20   0 1009724  29460   8688 S   0.0   1.5   0:45.98 snapd
+   1434 root       0 -20       0      0      0 S   0.0   0.0   0:12.49 loop7
+   1635 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop8
+   1702 root      20   0 1382872   8936   1572 S   0.0   0.4   0:49.73 amazon-+
+   1916 root      20   0 1321532  15316   1824 S   0.0   0.8   0:23.11 ssm-age+
+   1940 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop9
+   2561 isucon    20   0 1128540  51876      0 S   0.0   2.6   0:23.50 ruby
+   2562 isucon    20   0  116272  42856   4572 S   0.0   2.1   0:02.07 bundle
+   3701 root      20   0    2488    584    524 S   0.0   0.0   0:00.00 none
+   4951 isucon    20   0 1178004  88904   8320 S   0.0   4.5   0:03.03 bundle
+   4952 isucon    20   0 1177288  85432   8488 S   0.0   4.3   0:02.94 bundle
+  17536 root      20   0       0      0      0 I   0.0   0.0   0:00.21 kworker+
+  19599 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker+
+  20526 root      20   0       0      0      0 I   0.0   0.0   0:00.02 kworker+
+  20534 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20573 root      20   0   13796   8908   7464 S   0.0   0.4   0:00.02 sshd
+  20591 ubuntu    20   0   18248   9344   7920 S   0.0   0.5   0:00.08 systemd
+  20592 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker+
+  20594 ubuntu    20   0  106980   5148      0 S   0.0   0.3   0:00.00 (sd-pam)
+  20671 ubuntu    20   0   13932   5984   4516 S   0.0   0.3   0:00.00 sshd
+  20672 ubuntu    20   0   10180   5392   3604 S   0.0   0.3   0:00.04 bash
+  20690 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20704 root      20   0   13800   8964   7516 S   0.0   0.4   0:00.01 sshd
+  20800 ubuntu    20   0   13936   6056   4560 S   0.0   0.3   0:00.08 sshd
+  20819 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20820 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20881 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  21180 root      20   0  283808  15796  13880 S   0.0   0.8   0:00.02 package+
+  21301 ubuntu    20   0    2608    548    476 S   0.0   0.0   0:00.00 sh
+  21302 root      20   0   11328   4840   4116 S   0.0   0.2   0:00.00 sudo
+  21303 isucon    20   0    2608    604    540 S   0.0   0.0   0:00.00 sh
+  21304 isucon    20   0   29236  18500   9508 S   0.0   0.9   0:00.13 python3
+  21306 isucon    20   0    2608    544    476 S   0.0   0.0   0:00.00 sh
+  21307 isucon    20   0    8616   3316   3060 S   0.0   0.2   0:00.00 initial+
+
+top - 15:12:16 up  9:27,  2 users,  load average: 0.05, 0.01, 0.00
+Tasks: 118 total,   1 running, 117 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.1 us,  0.0 sy,  0.0 ni, 99.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.1 st
+MiB Mem :   1949.8 total,    544.5 free,    860.2 used,    545.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    927.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    289 root      rt   0  280136  17940   8200 S   0.2   0.9   0:03.20 multipa+
+    506 isucon    20   0 2250156  25076  10052 S   0.2   1.3   0:56.06 envoy
+    855 mysql     20   0 1807900 446368   7000 S   0.2  22.4   1:20.23 mysqld
+  21312 isucon    20   0   10872   3740   3288 R   0.2   0.2   0:00.02 top
+      1 root      20   0  105764  11468   6472 S   0.0   0.6   0:11.55 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.01 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+
+     10 root      20   0       0      0      0 S   0.0   0.0   0:00.72 ksoftir+
+     11 root      20   0       0      0      0 I   0.0   0.0   0:01.40 rcu_sch+
+     12 root      rt   0       0      0      0 S   0.0   0.0   0:00.16 migrati+
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     14 root      20   0       0      0      0 S   0.0   0.0   0:00.01 cpuhp/1
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.20 migrati+
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.97 ksoftir+
+     18 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmp+
+     20 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+
+     22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd
+     23 root      20   0       0      0      0 S   0.0   0.0   0:00.01 khungta+
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_rea+
+     25 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeba+
+     26 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kcompac+
+     27 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
+     28 root      39  19       0      0      0 S   0.0   0.0   0:00.01 khugepa+
+     74 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegr+
+     75 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd
+     76 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_p+
+     77 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 tpm_dev+
+     78 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ata_sff
+     79 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 md
+     80 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 edac-po+
+     81 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 devfreq+
+     82 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 watchdo+
+     86 root      20   0       0      0      0 S   0.0   0.0   2:19.73 kswapd0
+     87 root      20   0       0      0      0 S   0.0   0.0   0:00.00 ecryptf+
+     89 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kthrotld
+     90 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-wq
+     91 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-re+
+     92 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-de+
+     94 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ipv6_ad+
+    105 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kstrp
+    108 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+    122 root      20   0       0      0      0 S   0.0   0.0   0:00.70 jbd2/nv+
+    123 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ext4-rs+
+    147 root       0 -20       0      0      0 I   0.0   0.0   0:00.34 kworker+
+    148 root       0 -20       0      0      0 I   0.0   0.0   0:00.27 kworker+
+    164 root      19  -1  108912  24032  22704 S   0.0   1.2   0:04.27 systemd+
+    196 root      20   0   19436   4528   2604 S   0.0   0.2   0:02.34 systemd+
+    229 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ena
+    230 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 cryptd
+    285 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kaluad
+    286 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpath_+
+    287 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpathd
+    288 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpath_+
+    298 root       0 -20       0      0      0 S   0.0   0.0   0:00.07 loop0
+    301 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop1
+    303 root       0 -20       0      0      0 S   0.0   0.0   0:00.03 loop2
+    304 root       0 -20       0      0      0 S   0.0   0.0   0:00.06 loop3
+    305 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop4
+    360 systemd+  20   0   90228   3232   2392 S   0.0   0.2   0:00.13 systemd+
+    401 systemd+  20   0   26728   3848   2872 S   0.0   0.2   0:00.22 systemd+
+    404 systemd+  20   0   23892   8672   4624 S   0.0   0.4   0:00.43 systemd+
+    493 root      20   0  241308   5576   4268 S   0.0   0.3   0:01.41 account+
+    496 root      20   0    2540    676    612 S   0.0   0.0   0:00.00 acpid
+    499 root      20   0    8536   2516   2240 S   0.0   0.1   0:00.05 cron
+    500 message+  20   0    7536   4384   3604 S   0.0   0.2   0:01.22 dbus-da+
+    509 root      20   0   81828   2664   2344 S   0.0   0.1   0:00.86 irqbala+
+    513 root      20   0   29264  10972   3308 S   0.0   0.5   0:00.10 network+
+    516 syslog    20   0  224500   4068   2876 S   0.0   0.2   0:01.30 rsyslogd
+    520 root      20   0   10392   3676   2748 S   0.0   0.2   0:00.03 smartd
+    524 root      20   0   16792   5400   4480 S   0.0   0.3   0:00.59 systemd+
+    528 daemon    20   0    3792   2144   1964 S   0.0   0.1   0:00.01 atd
+    543 prometh+  20   0  485796   2448   1016 S   0.0   0.1   0:00.05 prometh+
+    547 root      20   0    7352   1668   1544 S   0.0   0.1   0:00.01 agetty
+    559 root      20   0    5828   1680   1564 S   0.0   0.1   0:00.44 agetty
+    581 root      20   0  108100  10908   3220 S   0.0   0.5   0:00.09 unatten+
+    591 root      20   0  236308   3928   3012 S   0.0   0.2   0:00.12 polkitd
+    701 root      20   0   12176   4760   3836 S   0.0   0.2   0:00.41 sshd
+   1069 root       0 -20       0      0      0 S   0.0   0.0   0:05.96 loop5
+   1132 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop6
+   1174 root      20   0 1009724  29460   8688 S   0.0   1.5   0:45.98 snapd
+   1434 root       0 -20       0      0      0 S   0.0   0.0   0:12.49 loop7
+   1635 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop8
+   1702 root      20   0 1382872   8936   1572 S   0.0   0.4   0:49.73 amazon-+
+   1916 root      20   0 1321532  15316   1824 S   0.0   0.8   0:23.11 ssm-age+
+   1940 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop9
+   2561 isucon    20   0 1128540  51876      0 S   0.0   2.6   0:23.50 ruby
+   2562 isucon    20   0  116272  42856   4572 S   0.0   2.1   0:02.07 bundle
+   3701 root      20   0    2488    584    524 S   0.0   0.0   0:00.00 none
+   4951 isucon    20   0 1178004  88904   8320 S   0.0   4.5   0:03.03 bundle
+   4952 isucon    20   0 1177288  85432   8488 S   0.0   4.3   0:02.94 bundle
+  17536 root      20   0       0      0      0 I   0.0   0.0   0:00.21 kworker+
+  19599 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker+
+  20526 root      20   0       0      0      0 I   0.0   0.0   0:00.02 kworker+
+  20534 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20573 root      20   0   13796   8908   7464 S   0.0   0.4   0:00.02 sshd
+  20591 ubuntu    20   0   18248   9344   7920 S   0.0   0.5   0:00.08 systemd
+  20592 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker+
+  20594 ubuntu    20   0  106980   5148      0 S   0.0   0.3   0:00.00 (sd-pam)
+  20671 ubuntu    20   0   13932   5984   4516 S   0.0   0.3   0:00.00 sshd
+  20672 ubuntu    20   0   10180   5392   3604 S   0.0   0.3   0:00.04 bash
+  20690 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20704 root      20   0   13800   8964   7516 S   0.0   0.4   0:00.01 sshd
+  20800 ubuntu    20   0   13936   6056   4560 S   0.0   0.3   0:00.08 sshd
+  20819 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20820 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  20881 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+  21180 root      20   0  283808  15796  13880 S   0.0   0.8   0:00.02 package+
+  21301 ubuntu    20   0    2608    548    476 S   0.0   0.0   0:00.00 sh
+  21302 root      20   0   11328   4840   4116 S   0.0   0.2   0:00.00 sudo
+  21303 isucon    20   0    2608    604    540 S   0.0   0.0   0:00.00 sh
+  21304 isucon    20   0   29236  18500   9508 S   0.0   0.9   0:00.13 python3
+  21306 isucon    20   0    2608    544    476 S   0.0   0.0   0:00.00 sh
+  21307 isucon    20   0    8616   3316   3060 S   0.0   0.2   0:00.00 initial+
+==========
+Netid              State               Recv-Q               Send-Q                                                                                Local Address:Port                                        Peer Address:Port                   Process                                                                         
+nl                 UNCONN              0                    0                                                                                                 0:404                                                     *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                 0:0                                                       *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                 0:21180                                                   *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                 0:1                                                       *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                 0:21180                                                   *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                 0:404                                                     *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                 0:1                                                       *                                                                                                       
+nl                 UNCONN              4352                 0                                                                                                 4:21313                                                   *                                                                                                       
+nl                 UNCONN              768                  0                                                                                                 4:0                                                       *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                 7:0                                                       *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                 9:-1614100214                                             *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                 9:21302                                                   *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                 9:0                                                       *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                 9:1                                                       *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                 9:1                                                       *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                10:0                                                       *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                11:0                                                       *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:-981352126                                              *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:1                                                       *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:-95939431                                               *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:-1701272976                                             *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:0                                                       *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:20591                                                   *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:-210804098                                              *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:524                                                     *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:1174                                                    *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:289                                                     *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:401                                                     *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:20591                                                   *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:1174                                                    *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:-95939431                                               *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:-981352126                                              *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:-210804098                                              *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:524                                                     *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:401                                                     *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:289                                                     *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:-1701272976                                             *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                15:1                                                       *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                16:496                                                     *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                16:0                                                       *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                16:496                                                     *                                                                                                       
+nl                 UNCONN              0                    0                                                                                                18:0                                                       *                                                                                                       
+p_raw              UNCONN              0                    0                                                                                           [35020]:ens5                                                    *                                                                                                       
+u_str              LISTEN              0                    4096                                                           /var/snap/lxd/common/lxd/unix.socket 27784                                                  * 0                                                                                                      
+u_dgr              UNCONN              0                    0                                                                     /run/user/1000/systemd/notify 193239                                                 * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                                 /run/user/1000/systemd/private 193242                                                 * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                                             /run/user/1000/bus 193247                                                 * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                                 /run/user/1000/gnupg/S.dirmngr 193248                                                 * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                       /run/user/1000/gnupg/S.gpg-agent.browser 193249                                                 * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                         /run/user/1000/gnupg/S.gpg-agent.extra 193250                                                 * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                          @/org/kernel/linux/storage/multipathd 12106                                                  * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                           /run/user/1000/gnupg/S.gpg-agent.ssh 193251                                                 * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                               /run/user/1000/gnupg/S.gpg-agent 193252                                                 * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                               /run/user/1000/pk-debconf-socket 193253                                                 * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                      /run/user/1000/snapd-session-agent.socket 193254                                                 * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                                 /var/lib/amazon/ssm/ipc/health 26212                                                  * 0                                                                                                      
+u_dgr              UNCONN              0                    0                                                                               /run/systemd/notify 12090                                                  * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                                           /run/systemd/private 12093                                                  * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                     /run/systemd/userdb/io.systemd.DynamicUser 12095                                                  * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                                       /run/lvm/lvmpolld.socket 12104                                                  * 0                                                                                                      
+u_dgr              UNCONN              0                    0                                                                       /run/systemd/journal/syslog 12107                                                  * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                                     /run/systemd/fsck.progress 12109                                                  * 0                                                                                                      
+u_dgr              UNCONN              0                    0                                                                      /run/systemd/journal/dev-log 12117                                                  * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                            /var/lib/amazon/ssm/ipc/termination 26213                                                  * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                                    /run/systemd/journal/stdout 12119                                                  * 0                                                                                                      
+u_dgr              UNCONN              0                    0                                                                       /run/systemd/journal/socket 12121                                                  * 0                                                                                                      
+u_seq              LISTEN              0                    4096                                                                              /run/udev/control 12124                                                  * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                        /run/systemd/journal/io.systemd.journal 793                                                    * 0                                                                                                      
+u_dgr              UNCONN              0                    0                    @envoy_domain_socket_parent_0@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 22707                                                  * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                                              /run/acpid.socket 16769                                                  * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                                    /run/dbus/system_bus_socket 16771                                                  * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                                              /run/snapd.socket 16779                                                  * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                                         /run/snapd-snap.socket 16781                                                  * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                                             /run/uuidd/request 16783                                                  * 0                                                                                                      
+u_str              LISTEN              0                    70                                                                      /var/run/mysqld/mysqlx.sock 22758                                                  * 0                                                                                                      
+u_str              LISTEN              0                    1                                                               /run/irqbalance//irqbalance509.sock 20207                                                  * 0                                                                                                      
+u_str              LISTEN              0                    4096                                                                   @ISCSIADM_ABSTRACT_NAMESPACE 16773                                                  * 0                                                                                                      
+u_str              LISTEN              0                    151                                                                     /var/run/mysqld/mysqld.sock 23600                                                  * 0                                                                                                      
+u_dgr              UNCONN              0                    0                    @envoy_domain_socket_child_0@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 22706                                                  * 0                                                                                                      
+u_dgr              UNCONN              0                    0                                                                                                 * 12302                                                  * 12121                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 12652                                                  * 12121                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 193963                                                 * 12117                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 12654                                                  * 12655                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 795                                                    * 12090                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 12655                                                  * 12654                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 193600                                                 * 12121                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 19811                                                  * 12117                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 193241                                                 * 193240                                                                                                 
+u_dgr              UNCONN              0                    0                                                                                                 * 193228                                                 * 12117                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 20322                                                  * 12121                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 193019                                                 * 12117                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 197833                                                 * 12117                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 193240                                                 * 193241                                                                                                 
+u_dgr              UNCONN              0                    0                                                                                                 * 19053                                                  * 12117                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 197846                                                 * 0                       users:(("python3",pid=21304,fd=3))                                             
+u_dgr              UNCONN              0                    0                                                                                                 * 15831                                                  * 12121                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 17006                                                  * 12117                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 15833                                                  * 15834                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 15835                                                  * 15836                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 15834                                                  * 15833                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 21502                                                  * 12090                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 15836                                                  * 15835                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 16317                                                  * 12121                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 12092                                                  * 12091                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 196833                                                 * 12117                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 18536                                                  * 12117                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 16458                                                  * 12121                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 16322                                                  * 16321                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 16324                                                  * 16323                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 16321                                                  * 16322                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 12091                                                  * 12092                                                                                                  
+u_dgr              UNCONN              0                    0                                                                                                 * 16323                                                  * 16324                                                                                                  
+icmp6              UNCONN              0                    0                                                                                            *%ens5:58                                                     *:*                                                                                                      
+udp                UNCONN              0                    0                                                                                     127.0.0.53%lo:53                                               0.0.0.0:*                                                                                                      
+udp                UNCONN              0                    0                                                                                172.31.27.197%ens5:68                                               0.0.0.0:*                                                                                                      
+tcp                LISTEN              0                    4096                                                                                  127.0.0.53%lo:53                                               0.0.0.0:*                                                                                                      
+tcp                LISTEN              0                    128                                                                                         0.0.0.0:22                                               0.0.0.0:*                                                                                                      
+tcp                LISTEN              0                    4096                                                                                        0.0.0.0:50051                                            0.0.0.0:*                       users:(("ruby",pid=2561,fd=5))                                                 
+tcp                LISTEN              0                    151                                                                                       127.0.0.1:3306                                             0.0.0.0:*                                                                                                      
+tcp                LISTEN              0                    1024                                                                                        0.0.0.0:9292                                             0.0.0.0:*                       users:(("bundle",pid=4952,fd=5),("bundle",pid=4951,fd=5),("bundle",pid=2562,fd=5))
+tcp                LISTEN              0                    4096                                                                                              *:80                                                     *:*                                                                                                      
+tcp                LISTEN              0                    128                                                                                            [::]:22                                                  [::]:*                                                                                                      
+tcp                LISTEN              0                    4096                                                                                              *:443                                                    *:*                                                                                                      
+tcp                LISTEN              0                    70                                                                                                *:33060                                                  *:*                                                                                                      
+tcp                LISTEN              0                    4096                                                                                              *:9100                                                   *:*                                                                                                      
+==========
+./initialize_isucon_repository.sh: line 24: netstat: command not found
+==========
+UNIT FILE                                          STATE           VENDOR PRESET
+accounts-daemon.service                            enabled         enabled      
+acpid.service                                      disabled        enabled      
+apparmor.service                                   enabled         enabled      
+apport-autoreport.service                          static          enabled      
+apport-forward@.service                            static          enabled      
+apport.service                                     generated       enabled      
+apt-daily-upgrade.service                          masked          enabled      
+apt-daily.service                                  masked          enabled      
+atd.service                                        enabled         enabled      
+autovt@.service                                    enabled         enabled      
+blk-availability.service                           enabled         enabled      
+bolt.service                                       static          enabled      
+cloud-config.service                               enabled         enabled      
+cloud-final.service                                enabled         enabled      
+cloud-init-local.service                           enabled         enabled      
+cloud-init.service                                 enabled         enabled      
+console-getty.service                              disabled        disabled     
+console-setup.service                              enabled         enabled      
+container-getty@.service                           static          enabled      
+cron.service                                       enabled         enabled      
+cryptdisks-early.service                           masked          enabled      
+cryptdisks.service                                 masked          enabled      
+dbus-org.freedesktop.hostname1.service             static          enabled      
+dbus-org.freedesktop.locale1.service               static          enabled      
+dbus-org.freedesktop.login1.service                static          enabled      
+dbus-org.freedesktop.resolve1.service              enabled         enabled      
+dbus-org.freedesktop.timedate1.service             static          enabled      
+dbus-org.freedesktop.timesync1.service             enabled         enabled      
+dbus.service                                       static          enabled      
+debug-shell.service                                disabled        disabled     
+dm-event.service                                   static          enabled      
+dmesg.service                                      enabled         enabled      
+e2scrub@.service                                   static          enabled      
+e2scrub_all.service                                static          enabled      
+e2scrub_fail@.service                              static          enabled      
+e2scrub_reap.service                               enabled         enabled      
+ec2-instance-connect.service                       enabled         enabled      
+emergency.service                                  static          enabled      
+envoy.service                                      enabled         enabled      
+finalrd.service                                    enabled         enabled      
+friendly-recovery.service                          static          enabled      
+fstrim.service                                     static          enabled      
+fwupd-offline-update.service                       static          enabled      
+fwupd-refresh.service                              static          disabled     
+fwupd.service                                      static          enabled      
+getty-static.service                               static          enabled      
+getty@.service                                     enabled         enabled      
+grub-common.service                                generated       enabled      
+grub-initrd-fallback.service                       enabled         enabled      
+hibagent.service                                   generated       enabled      
+hibinit-agent.service                              enabled         enabled      
+hwclock.service                                    masked          enabled      
+initrd-cleanup.service                             static          enabled      
+initrd-parse-etc.service                           static          enabled      
+initrd-switch-root.service                         static          enabled      
+initrd-udevadm-cleanup-db.service                  static          enabled      
+irqbalance.service                                 enabled         enabled      
+iscsi.service                                      enabled         enabled      
+iscsid.service                                     disabled        enabled      
+isucon-env-ensure-benchmark-server.service         enabled         enabled      
+keyboard-setup.service                             enabled         enabled      
+kmod-static-nodes.service                          static          enabled      
+kmod.service                                       static          enabled      
+logrotate.service                                  static          enabled      
+lvm2-lvmpolld.service                              static          enabled      
+lvm2-monitor.service                               enabled         enabled      
+lvm2-pvscan@.service                               static          enabled      
+lvm2.service                                       masked          enabled      
+lxd-agent-9p.service                               enabled         enabled      
+lxd-agent.service                                  enabled         enabled      
+man-db.service                                     static          enabled      
+mdadm-grow-continue@.service                       static          enabled      
+mdadm-last-resort@.service                         static          enabled      
+mdcheck_continue.service                           static          enabled      
+mdcheck_start.service                              static          enabled      
+mdmon@.service                                     static          enabled      
+mdmonitor-oneshot.service                          static          enabled      
+mdmonitor.service                                  static          enabled      
+modprobe@.service                                  static          enabled      
+motd-news.service                                  static          enabled      
+multipath-tools-boot.service                       masked          enabled      
+multipath-tools.service                            enabled         enabled      
+multipathd.service                                 enabled         enabled      
+mysql.service                                      enabled         enabled      
+netplan-ovs-cleanup.service                        enabled-runtime enabled      
+networkd-dispatcher.service                        enabled         enabled      
+ondemand.service                                   enabled         enabled      
+open-iscsi.service                                 enabled         enabled      
+open-vm-tools.service                              enabled         enabled      
+packagekit-offline-update.service                  static          enabled      
+packagekit.service                                 static          enabled      
+plymouth-halt.service                              static          enabled      
+plymouth-kexec.service                             static          enabled      
+plymouth-log.service                               static          enabled      
+plymouth-poweroff.service                          static          enabled      
+plymouth-quit-wait.service                         static          enabled      
+plymouth-quit.service                              static          enabled      
+plymouth-read-write.service                        static          enabled      
+plymouth-reboot.service                            static          enabled      
+plymouth-start.service                             static          enabled      
+plymouth-switch-root.service                       static          enabled      
+plymouth.service                                   static          enabled      
+polkit.service                                     static          enabled      
+pollinate.service                                  enabled         enabled      
+procps.service                                     static          enabled      
+prometheus-node-exporter-apt.service               static          enabled      
+prometheus-node-exporter-ipmitool-sensor.service   static          enabled      
+prometheus-node-exporter-mellanox-hca-temp.service static          enabled      
+prometheus-node-exporter-smartmon.service          static          enabled      
+prometheus-node-exporter.service                   enabled         enabled      
+quotaon.service                                    static          enabled      
+rc-local.service                                   static          enabled      
+rc.service                                         masked          enabled      
+rcS.service                                        masked          enabled      
+rescue.service                                     static          enabled      
+rsync.service                                      enabled         enabled      
+rsyslog.service                                    enabled         enabled      
+screen-cleanup.service                             masked          enabled      
+secureboot-db.service                              enabled         enabled      
+serial-getty@.service                              indirect        enabled      
+setvtrgb.service                                   enabled         enabled      
+smartd.service                                     enabled         enabled      
+smartmontools.service                              enabled         enabled      
+snap.amazon-ssm-agent.amazon-ssm-agent.service     enabled         enabled      
+snap.lxd.activate.service                          enabled         enabled      
+snap.lxd.daemon.service                            static          enabled      
+snapd.apparmor.service                             enabled         enabled      
+snapd.autoimport.service                           enabled         enabled      
+snapd.core-fixup.service                           enabled         enabled      
+snapd.failure.service                              static          enabled      
+snapd.recovery-chooser-trigger.service             enabled         enabled      
+snapd.seeded.service                               enabled         enabled      
+snapd.service                                      enabled         enabled      
+snapd.snap-repair.service                          static          enabled      
+snapd.system-shutdown.service                      enabled         enabled      
+ssh.service                                        enabled         enabled      
+ssh@.service                                       static          enabled      
+sshd.service                                       enabled         enabled      
+sudo.service                                       masked          enabled      
+syslog.service                                     enabled         enabled      
+system-update-cleanup.service                      static          enabled      
+systemd-ask-password-console.service               static          enabled      
+systemd-ask-password-plymouth.service              static          enabled      
+systemd-ask-password-wall.service                  static          enabled      
+systemd-backlight@.service                         static          enabled      
+systemd-binfmt.service                             static          enabled      
+systemd-bless-boot.service                         static          enabled      
+systemd-boot-check-no-failures.service             disabled        enabled      
+systemd-boot-system-token.service                  static          enabled      
+systemd-exit.service                               static          enabled      
+systemd-fsck-root.service                          enabled-runtime enabled      
+systemd-fsck@.service                              static          enabled      
+systemd-fsckd.service                              static          enabled      
+systemd-halt.service                               static          enabled      
+systemd-hibernate-resume@.service                  static          enabled      
+systemd-hibernate.service                          static          enabled      
+systemd-hostnamed.service                          static          enabled      
+systemd-hwdb-update.service                        static          enabled      
+systemd-hybrid-sleep.service                       static          enabled      
+systemd-initctl.service                            static          enabled      
+systemd-journal-flush.service                      static          enabled      
+systemd-journald.service                           static          enabled      
+systemd-journald@.service                          static          enabled      
+systemd-kexec.service                              static          enabled      
+systemd-localed.service                            static          enabled      
+systemd-logind.service                             static          enabled      
+systemd-machine-id-commit.service                  static          enabled      
+systemd-modules-load.service                       static          enabled      
+systemd-network-generator.service                  disabled        enabled      
+systemd-networkd-wait-online.service               enabled         enabled      
+systemd-networkd.service                           enabled         enabled      
+systemd-poweroff.service                           static          enabled      
+systemd-pstore.service                             enabled         enabled      
+systemd-quotacheck.service                         static          enabled      
+systemd-random-seed.service                        static          enabled      
+systemd-reboot.service                             static          enabled      
+systemd-remount-fs.service                         enabled-runtime enabled      
+systemd-resolved.service                           enabled         enabled      
+systemd-rfkill.service                             static          enabled      
+systemd-suspend-then-hibernate.service             static          enabled      
+systemd-suspend.service                            static          enabled      
+systemd-sysctl.service                             static          enabled      
+systemd-sysusers.service                           static          enabled      
+systemd-time-wait-sync.service                     disabled        enabled      
+systemd-timedated.service                          static          enabled      
+systemd-timesyncd.service                          enabled         enabled      
+systemd-tmpfiles-clean.service                     static          enabled      
+systemd-tmpfiles-setup-dev.service                 static          enabled      
+systemd-tmpfiles-setup.service                     static          enabled      
+systemd-udev-settle.service                        static          enabled      
+systemd-udev-trigger.service                       static          enabled      
+systemd-udevd.service                              static          enabled      
+systemd-update-utmp-runlevel.service               static          enabled      
+systemd-update-utmp.service                        static          enabled      
+systemd-user-sessions.service                      static          enabled      
+systemd-volatile-root.service                      static          enabled      
+udev.service                                       static          enabled      
+ufw.service                                        enabled         enabled      
+unattended-upgrades.service                        enabled         enabled      
+user-runtime-dir@.service                          static          enabled      
+user@.service                                      static          enabled      
+uuidd.service                                      indirect        enabled      
+vgauth.service                                     enabled         enabled      
+vmtoolsd.service                                   enabled         enabled      
+x11-common.service                                 masked          enabled      
+xfs_scrub@.service                                 static          enabled      
+xfs_scrub_all.service                              static          enabled      
+xfs_scrub_fail@.service                            static          enabled      
+xsuportal-api-golang.service                       disabled        enabled      
+xsuportal-api-nodejs.service                       disabled        enabled      
+xsuportal-api-ruby.service                         enabled         enabled      
+xsuportal-api-rust.service                         disabled        enabled      
+xsuportal-web-golang.service                       disabled        enabled      
+xsuportal-web-nodejs.service                       disabled        enabled      
+xsuportal-web-ruby.service                         enabled         enabled      
+xsuportal-web-rust.service                         disabled        enabled      
+
+216 unit files listed.
+==========
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    05:44   0:00 [kthreadd]
+root          86  0.4  0.0      0     0 ?        S    05:44   2:19  \_ [kswapd0]
+root           3  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [rcu_par_gp]
+root           6  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [kworker/0:0H-kblockd]
+root           9  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [mm_percpu_wq]
+root          10  0.0  0.0      0     0 ?        S    05:44   0:00  \_ [ksoftirqd/0]
+root          11  0.0  0.0      0     0 ?        I    05:44   0:01  \_ [rcu_sched]
+root          12  0.0  0.0      0     0 ?        S    05:44   0:00  \_ [migration/0]
+root          13  0.0  0.0      0     0 ?        S    05:44   0:00  \_ [cpuhp/0]
+root          14  0.0  0.0      0     0 ?        S    05:44   0:00  \_ [cpuhp/1]
+root          15  0.0  0.0      0     0 ?        S    05:44   0:00  \_ [migration/1]
+root          16  0.0  0.0      0     0 ?        S    05:44   0:00  \_ [ksoftirqd/1]
+root          18  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [kworker/1:0H-kblockd]
+root          19  0.0  0.0      0     0 ?        S    05:44   0:00  \_ [kdevtmpfs]
+root          20  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [netns]
+root          21  0.0  0.0      0     0 ?        S    05:44   0:00  \_ [rcu_tasks_kthre]
+root          22  0.0  0.0      0     0 ?        S    05:44   0:00  \_ [kauditd]
+root          23  0.0  0.0      0     0 ?        S    05:44   0:00  \_ [khungtaskd]
+root          24  0.0  0.0      0     0 ?        S    05:44   0:00  \_ [oom_reaper]
+root          25  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [writeback]
+root          26  0.0  0.0      0     0 ?        S    05:44   0:00  \_ [kcompactd0]
+root          27  0.0  0.0      0     0 ?        SN   05:44   0:00  \_ [ksmd]
+root          28  0.0  0.0      0     0 ?        SN   05:44   0:00  \_ [khugepaged]
+root          74  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [kintegrityd]
+root          75  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [kblockd]
+root          76  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [blkcg_punt_bio]
+root          77  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [tpm_dev_wq]
+root          78  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [ata_sff]
+root          79  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [md]
+root          80  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [edac-poller]
+root          81  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [devfreq_wq]
+root          82  0.0  0.0      0     0 ?        S    05:44   0:00  \_ [watchdogd]
+root          87  0.0  0.0      0     0 ?        S    05:44   0:00  \_ [ecryptfs-kthrea]
+root          89  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [kthrotld]
+root          90  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [nvme-wq]
+root          91  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [nvme-reset-wq]
+root          92  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [nvme-delete-wq]
+root          94  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [ipv6_addrconf]
+root         105  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [kstrp]
+root         108  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [kworker/u5:0]
+root         122  0.0  0.0      0     0 ?        S    05:44   0:00  \_ [jbd2/nvme0n1p1-]
+root         123  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [ext4-rsv-conver]
+root         147  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [kworker/1:1H-kblockd]
+root         148  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [kworker/0:1H-kblockd]
+root         229  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [ena]
+root         230  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [cryptd]
+root         285  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [kaluad]
+root         286  0.0  0.0      0     0 ?        I<   05:44   0:00  \_ [kmpath_rdacd]
+==========
+isucon     21320  0.0  0.0   8160   736 pts/1    S+   15:12   0:00                                  \_ grep nginx
+==========
+isucon     21322  0.0  0.0   8160   740 pts/1    S+   15:12   0:00                                  \_ grep mysql
+mysql        855  0.2 22.3 1807900 446368 ?      Ssl  05:45   1:20 /usr/sbin/mysqld
+==========
+isucon     21324  0.0  0.0   8160   736 pts/1    S+   15:12   0:00                                  \_ grep go
+==========

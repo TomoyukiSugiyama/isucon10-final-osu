@@ -1,0 +1,14 @@
+[Unit]
+Description=Mount unit for go, revision 7954
+Before=snapd.service
+After=zfs-mount.service
+
+[Mount]
+What=/var/lib/snapd/snaps/go_7954.snap
+Where=/snap/go/7954
+Type=squashfs
+Options=nodev,ro,x-gdu.hide,x-gvfs-hide
+LazyUnmount=yes
+
+[Install]
+WantedBy=multi-user.target

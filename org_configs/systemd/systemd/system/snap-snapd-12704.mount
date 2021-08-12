@@ -1,0 +1,13 @@
+[Unit]
+Description=Mount unit for snapd, revision 12704
+Before=snapd.service
+
+[Mount]
+What=/var/lib/snapd/snaps/snapd_12704.snap
+Where=/snap/snapd/12704
+Type=squashfs
+Options=nodev,ro,x-gdu.hide
+LazyUnmount=yes
+
+[Install]
+WantedBy=multi-user.target

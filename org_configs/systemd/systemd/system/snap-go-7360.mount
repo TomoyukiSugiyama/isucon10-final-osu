@@ -1,0 +1,13 @@
+[Unit]
+Description=Mount unit for go, revision 7360
+Before=snapd.service
+
+[Mount]
+What=/var/lib/snapd/snaps/go_7360.snap
+Where=/snap/go/7360
+Type=squashfs
+Options=nodev,ro,x-gdu.hide
+LazyUnmount=yes
+
+[Install]
+WantedBy=multi-user.target
