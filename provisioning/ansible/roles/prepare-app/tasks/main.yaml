@@ -1,0 +1,28 @@
+---
+- name: Start "xsuportal-api-golang.service"
+  systemd:
+    daemon_reload: "yes"
+    name: "xsuportal-api-golang.service"
+    state: "restarted"
+    enabled: "yes"
+
+- name: Start "xsuportal-web-golang.service"
+  systemd:
+    daemon_reload: "yes"
+    name: "xsuportal-web-golang.service"
+    state: "restarted"
+    enabled: "yes"
+
+#- name: Start "nginx"
+#  systemd:
+#    daemon_reload: "yes"
+#    name: "nginx"
+#    state: "reloaded"
+#    enabled: "yes"
+
+- name: Start "envoy"
+  systemd:
+    daemon_reload: "yes"
+    name: "envoy"
+    state: "restarted"
+    enabled: "yes"

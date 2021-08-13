@@ -1,0 +1,23 @@
+---
+- name: Copy mysqld.conf
+  become: yes
+  become_user: root
+  copy:
+    src: "mysqld.cnf"
+    dest: "/etc/mysql/mysql.conf.d/mysqld.cnf"
+    owner: "root"
+    group: "root"
+    mode: "0644"
+
+- name: Copy my.conf
+  become: yes
+  become_user: root
+  copy:
+    src: "{{ item }}"
+    dest: "/etc/mysql/conf.d"
+    owner: "root"
+    group: "root"
+    mode: "0644"
+  with_items:
+    - mysql.cnf
+    - mysqldump.cnf

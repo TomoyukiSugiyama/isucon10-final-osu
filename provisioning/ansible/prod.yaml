@@ -1,0 +1,37 @@
+- hosts: webapp
+  become: yes
+  become_user: root
+  vars_prompt:
+    - name: git_user
+      private: no
+    - name: git_pass
+      private: yes
+    - name: revision
+      private: no
+  roles:
+    - role: bootstrap-sys
+      tags: [bootstrap]
+    - role: bootstrap-app
+      tags: [bootstrap]
+    - role: app-go
+      tags: [go]
+    - role: prepare-app
+      tags: [go, bootstrap]
+
+- hosts: db
+  become: yes
+  become_user: root
+  vars_prompt:
+    - name: git_user
+      private: no
+    - name: git_pass
+      private: yes
+    - name: revision
+      private: no
+  roles:
+    - role: bootstrap-sys
+      tags: [bootstrap]
+    - role: bootstrap-db
+      tags: [bootstrap]
+    - role: prepare-db
+      tags: [db, bootstrap]

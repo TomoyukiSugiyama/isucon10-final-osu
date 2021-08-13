@@ -1,0 +1,43 @@
+# FIXME: changeme for new setup.
+---
+- name:  Set env
+  become: yes
+  become_user: isucon
+  args:
+    chdir: /home/isucon/webapp/golang
+  shell: set -o allexport; source ~isucon/env; set +o allexport
+
+- name: Build Web Application Go
+  become: yes
+  become_user: isucon
+  args:
+    chdir: /home/isucon/webapp/golang
+  shell: make
+
+- name: Copy Service file
+  copy:
+    src: "{{ item }}"
+    dest: "/etc/systemd/system"
+    owner: "root"
+    group: "root"
+    mode: "0644"
+  with_items:
+    - xsuportal-api-golang.service
+    - xsuportal-web-golang.service
+
+- name: Setup frontend
+  become: yes
+  become_user: isucon
+  args:
+    chdir: /home/isucon/webapp/frontend
+  shell: |
+    /home/isucon/.x yarn &&
+    /home/isucon/.x yarn build
+
+#- name: Copy GCP credentials file
+#  copy:
+#    src: "gcp_credentials.json"
+#    dest: "/home/gcp_credentials.json"
+#    owner: "root"
+#    group: "root"
+#    mode: "0644"

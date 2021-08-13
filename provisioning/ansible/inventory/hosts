@@ -1,0 +1,8 @@
+# FIXME: changeme for new setup.
+# 仮決めで webapp, db と書いてるけど、状況に合わせて変えてね
+
+[webapp]
+18.183.59.44
+
+[db]
+18.183.59.44
