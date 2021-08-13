@@ -43,6 +43,7 @@
   args:
     chdir: /home/isucon/webapp/frontend
   shell: |
+    export PATH="/home/isucon/.yarn/bin:/home/isucon/.config/yarn/global/node_modules/.bin:$PATH" &&
     yarn &&
     yarn build
 
