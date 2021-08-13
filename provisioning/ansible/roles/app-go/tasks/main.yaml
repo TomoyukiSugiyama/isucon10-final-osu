@@ -37,21 +37,14 @@
     - xsuportal-api-golang.service
     - xsuportal-web-golang.service
 
-- name: Set env
-  become: yes
-  become_user: isucon
-  args:
-    chdir: /home/isucon
-  shell: /home/isucon/.x
-
 - name: Setup frontend
   become: yes
   become_user: isucon
   args:
     chdir: /home/isucon/webapp/frontend
   shell: |
-    yarn &&
-    yarn build
+    /home/isucon/.x yarn &&
+    /home/isucon/.x yarn build
 
 #- name: Copy GCP credentials file
 #  copy:
