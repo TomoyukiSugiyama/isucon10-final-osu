@@ -1,8 +1,15 @@
 ---
-- name: Start "osu_sample.go.service"
+- name: Start "xsuportal-api-golang.service"
   systemd:
     daemon_reload: "yes"
-    name: "osu_sample.go.service"
+    name: "xsuportal-api-golang.service"
+    state: "restarted"
+    enabled: "yes"
+
+- name: Start "xsuportal-web-golang.service"
+  systemd:
+    daemon_reload: "yes"
+    name: "xsuportal-web-golang.service"
     state: "restarted"
     enabled: "yes"
 
