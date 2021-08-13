@@ -34,8 +34,8 @@
     group: "root"
     mode: "0644"
   with_items:
-    - xsuportal-api-go.service
-    - xsuportal-api-web.service
+    - xsuportal-api-golang.service
+    - xsuportal-web-golang.service
 
 #- name: Copy GCP credentials file
 #  copy:
