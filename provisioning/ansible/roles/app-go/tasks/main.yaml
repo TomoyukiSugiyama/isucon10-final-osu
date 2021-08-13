@@ -37,13 +37,19 @@
     - xsuportal-api-golang.service
     - xsuportal-web-golang.service
 
+- name: Set env
+  become: yes
+  become_user: isucon
+  args:
+    chdir: /home/isucon
+  shell: .x
+
 - name: Setup frontend
   become: yes
   become_user: isucon
   args:
     chdir: /home/isucon/webapp/frontend
   shell: |
-    export PATH="/home/isucon/.yarn/bin:/home/isucon/.config/yarn/global/node_modules/.bin:$PATH" &&
     yarn &&
     yarn build
 
