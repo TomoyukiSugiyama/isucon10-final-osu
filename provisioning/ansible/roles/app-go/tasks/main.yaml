@@ -13,6 +13,8 @@
 - name:  Set env
   become: yes
   become_user: isucon
+  args:
+    chdir: /home/isucon/webapp/golang
   command: set -o allexport; source ~isucon/env; set +o allexport
 
 - name: Build Web Application Go
