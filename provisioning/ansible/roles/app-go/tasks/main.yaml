@@ -42,7 +42,7 @@
   become_user: isucon
   args:
     chdir: /home/isucon
-  shell: .x
+  shell: /home/isucon/.x
 
 - name: Setup frontend
   become: yes
