@@ -1,0 +1,14 @@
+---
+- name: Start "osu_sample.go.service"
+  systemd:
+    daemon_reload: "yes"
+    name: "osu_sample.go.service"
+    state: "restarted"
+    enabled: "yes"
+
+- name: Start "nginx"
+  systemd:
+    daemon_reload: "yes"
+    name: "nginx"
+    state: "reloaded"
+    enabled: "yes"

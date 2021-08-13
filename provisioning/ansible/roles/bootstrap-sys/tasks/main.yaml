@@ -1,0 +1,15 @@
+---
+- name: Copy sysctl.conf
+  become: yes
+  become_user: root
+  copy:
+    src: "sysctl.conf"
+    dest: "/etc/sysctl.conf"
+    owner: "root"
+    group: "root"
+    mode: "0644"
+
+- name: reoad sysctl
+  become: yes
+  become_user: root
+  command: sysctl -p
