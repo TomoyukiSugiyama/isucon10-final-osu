@@ -44,15 +44,6 @@
     path: /tmp/isucon10-final
     state: absent
 
-- name: Setup frontend
-  become: yes
-  become_user: isucon
-  args:
-    chdir: /home/isucon/webapp/frontend
-  shell: |
-    yarn &&
-    yarn build
-
 #- name: Deploy nginx.conf
 #  copy:
 #    src: "nginx.conf"
