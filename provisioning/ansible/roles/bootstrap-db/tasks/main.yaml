@@ -13,8 +13,11 @@
   become: yes
   become_user: root
   copy:
-    src: "my.cnf"
-    dest: "/etc/mysql/conf.d/my.cnf"
+    src: "{{ item }}"
+    dest: "/etc/mysql/conf.d"
     owner: "root"
     group: "root"
     mode: "0644"
+  with_items:
+    - mysql.cnf
+    - mysqldump.cnf

@@ -9,7 +9,7 @@
     group: "root"
     mode: "0644"
 
-- name: reoad sysctl
+- name: reload sysctl
   become: yes
   become_user: root
   command: sysctl -p

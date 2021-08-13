@@ -1,100 +1,100 @@
 ---
-- name: Check isucon11-qualify
+- name: Check isucon10-final
   become: no
   stat:
-    path: "/home/isucon/osu_sample"
+    path: "/home/isucon/webapp"
   register: chk_file
 
-- name: Delete isucon11-qualify if exists
+- name: Delete isucon10-final if exists
   become: yes
   become_user: root
   file:
-    path: /home/isucon/osu_sample
+    path: /home/isucon/webapp
     state: absent
   when: chk_file.stat.exists
 
-- name: Clone isucon11-qualify
+- name: Clone isucon10-final
   become: no
   ansible.builtin.git:
-    repo: https://{{git_user|urlencode()}}:{{git_pass|urlencode()}}@github.com/sensuikan1973/isucon11-qualify-osu.git
+    repo: https://{{git_user|urlencode()}}:{{git_pass|urlencode()}}@github.com/TomoyukiSugiyama/isucon10-final-osu.git
     refspec: "+refs/pull/*:refs/remotes/pr/*" # See: https://qiita.com/sonots/items/16df445132e704198e3e
     version: "{{revision}}"
-    dest: /tmp/isucon11-qualify
+    dest: /tmp/isucon10-final
     accept_hostkey: yes
 
-- name: Chgroup isucon11-qualify repo
+- name: Chgroup isucon10-final repo
   become: yes
   become_user: root
   file:
-    path: /tmp/isucon11-qualify
+    path: /tmp/isucon10-final
     state: directory
     owner: isucon
     group: isucon
     recurse: yes
 
-- name: Deploy isucon11-qualify
+- name: Deploy isucon10-final
   become: yes
   become_user: isucon
-  command: mv /tmp/isucon11-qualify/osu_sample /home/isucon/osu_sample
+  command: mv /tmp/isucon10-final/webapp /home/isucon/webapp
 
-- name: Delete isucon11-qualify
+- name: Delete isucon10-final
   become: yes
   become_user: root
   file:
-    path: /tmp/isucon11-qualify
+    path: /tmp/isucon10-final
     state: absent
 
-- name: Deploy nginx.conf
-  copy:
-    src: "nginx.conf"
-    dest: "/etc/nginx/nginx.conf"
-    owner: "root"
-    group: "root"
-    mode: "0644"
+#- name: Deploy nginx.conf
+#  copy:
+#    src: "nginx.conf"
+#    dest: "/etc/nginx/nginx.conf"
+#    owner: "root"
+#    group: "root"
+#    mode: "0644"
+#
+#- name: Deploy nginx osu_sample.conf
+#  copy:
+#    src: "osu_sample.conf"
+#    dest: "/etc/nginx/sites-available/osu_sample.conf"
+#    owner: "root"
+#    group: "root"
+#    mode: "0644"
+#
+#- name: Check nginx syntax
+#  shell: nginx -t -c /etc/nginx/nginx.conf
 
-- name: Deploy nginx osu_sample.conf
-  copy:
-    src: "osu_sample.conf"
-    dest: "/etc/nginx/sites-available/osu_sample.conf"
-    owner: "root"
-    group: "root"
-    mode: "0644"
-
-- name: Check nginx syntax
-  shell: nginx -t -c /etc/nginx/nginx.conf
-
-- name: Enable osu_sample.config
-  file:
-    path: /etc/nginx/sites-enabled/osu_sample.conf
-    src: /etc/nginx/sites-available/osu_sample.conf
-    state: link
-
-- name: Deploy env shellscript
-  become: yes
-  become_user: isucon
-  copy:
-    src: "env.sh"
-    dest: /home/isucon
-
-# nginx 解析ツール
-- name: Copy alp
-  become: yes
-  become_user: root
-  copy:
-    src: "alp" # https://github.com/tkuchiki/alp/releases/download/v1.0.5/alp_linux_amd64.zip
-    dest: /usr/bin
-    mode: "0755"
-
-- name: Copy alp_with_uri_grouping.yml
-  become: yes
-  become_user: isucon
-  copy:
-    src: "alp_with_uri_grouping.yml"
-    dest: /home/isucon
-
-- name: Copy alp_without_grouping.yml
-  become: yes
-  become_user: isucon
-  copy:
-    src: "alp_without_grouping.yml"
-    dest: /home/isucon
+#- name: Enable osu_sample.config
+#  file:
+#    path: /etc/nginx/sites-enabled/osu_sample.conf
+#    src: /etc/nginx/sites-available/osu_sample.conf
+#    state: link
+#
+#- name: Deploy env shellscript
+#  become: yes
+#  become_user: isucon
+#  copy:
+#    src: "env.sh"
+#    dest: /home/isucon
+#
+## nginx 解析ツール
+#- name: Copy alp
+#  become: yes
+#  become_user: root
+#  copy:
+#    src: "alp" # https://github.com/tkuchiki/alp/releases/download/v1.0.5/alp_linux_amd64.zip
+#    dest: /usr/bin
+#    mode: "0755"
+#
+#- name: Copy alp_with_uri_grouping.yml
+#  become: yes
+#  become_user: isucon
+#  copy:
+#    src: "alp_with_uri_grouping.yml"
+#    dest: /home/isucon
+#
+#- name: Copy alp_without_grouping.yml
+#  become: yes
+#  become_user: isucon
+#  copy:
+#    src: "alp_without_grouping.yml"
+#    dest: /home/isucon

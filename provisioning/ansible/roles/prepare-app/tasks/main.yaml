@@ -6,9 +6,16 @@
     state: "restarted"
     enabled: "yes"
 
-- name: Start "nginx"
+#- name: Start "nginx"
+#  systemd:
+#    daemon_reload: "yes"
+#    name: "nginx"
+#    state: "reloaded"
+#    enabled: "yes"
+
+- name: Start "envoy"
   systemd:
     daemon_reload: "yes"
-    name: "nginx"
+    name: "envoy"
     state: "reloaded"
     enabled: "yes"
