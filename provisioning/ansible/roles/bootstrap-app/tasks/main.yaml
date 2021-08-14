@@ -60,7 +60,7 @@
     group: "root"
     mode: "0644"
 
-- name: Deploy nginx osu_sample.conf
+- name: Deploy nginx xsuportal.conf
   copy:
     src: "xsuportal.conf"
     dest: "/etc/nginx/sites-available/xsuportal.conf"
@@ -71,7 +71,7 @@
 - name: Check nginx syntax
   shell: nginx -t -c /etc/nginx/nginx.conf
 
-- name: Enable osu_sample.config
+- name: Enable xsuportal.config
   file:
     path: /etc/nginx/sites-enabled/xsuportal.conf
     src: /etc/nginx/sites-available/xsuportal.conf
