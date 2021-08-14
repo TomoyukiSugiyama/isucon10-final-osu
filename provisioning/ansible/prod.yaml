@@ -8,6 +8,8 @@
       private: yes
     - name: revision
       private: no
+  vars:
+    API_SERVER: localhost
   roles:
     - role: bootstrap-sys
       tags: [bootstrap]

@@ -8,15 +8,15 @@ server {
     listen [::]:80 default_server;
 
     location /xsuportal.proto.services.bench.BenchmarkQueue {
-            proxy_pass http://localhost:50051;
+            proxy_pass http://{{API_SERVER}}:50051;
     }
 
     location /xsuportal.proto.services.bench.BenchmarkReport {
-            proxy_pass http://localhost:50051;
+            proxy_pass http://{{API_SERVER}}:50051;
     }
 
     location / {
-            proxy_pass http://localhost:9292;
+            proxy_pass http://{{API_SERVER}}:9292;
     }
 
     location /status {

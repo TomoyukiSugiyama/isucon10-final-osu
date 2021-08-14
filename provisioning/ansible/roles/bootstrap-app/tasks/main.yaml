@@ -61,8 +61,8 @@
     mode: "0644"
 
 - name: Deploy nginx xsuportal.conf
-  copy:
-    src: "xsuportal.conf"
+  template:
+    src: "xsuportal.conf.j2"
     dest: "/etc/nginx/sites-available/xsuportal.conf"
     owner: "root"
     group: "root"
