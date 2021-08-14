@@ -1,4 +1,12 @@
 ---
+- name: Install Package(Build)
+  become: yes
+  become_user: root
+  apt:
+    name: 
+    - nginx
+    update_cache: yes
+
 - name: Check isucon10-final
   become: no
   stat:
@@ -44,31 +52,31 @@
     path: /tmp/isucon10-final
     state: absent
 
-#- name: Deploy nginx.conf
-#  copy:
-#    src: "nginx.conf"
-#    dest: "/etc/nginx/nginx.conf"
-#    owner: "root"
-#    group: "root"
-#    mode: "0644"
-#
-#- name: Deploy nginx osu_sample.conf
-#  copy:
-#    src: "osu_sample.conf"
-#    dest: "/etc/nginx/sites-available/osu_sample.conf"
-#    owner: "root"
-#    group: "root"
-#    mode: "0644"
-#
-#- name: Check nginx syntax
-#  shell: nginx -t -c /etc/nginx/nginx.conf
+- name: Deploy nginx.conf
+  copy:
+    src: "nginx.conf"
+    dest: "/etc/nginx/nginx.conf"
+    owner: "root"
+    group: "root"
+    mode: "0644"
 
-#- name: Enable osu_sample.config
-#  file:
-#    path: /etc/nginx/sites-enabled/osu_sample.conf
-#    src: /etc/nginx/sites-available/osu_sample.conf
-#    state: link
-#
+- name: Deploy nginx osu_sample.conf
+  copy:
+    src: "xsuportal.conf"
+    dest: "/etc/nginx/sites-available/xsuportal.conf"
+    owner: "root"
+    group: "root"
+    mode: "0644"
+
+- name: Check nginx syntax
+  shell: nginx -t -c /etc/nginx/nginx.conf
+
+- name: Enable osu_sample.config
+  file:
+    path: /etc/nginx/sites-enabled/xsuportal.conf
+    src: /etc/nginx/sites-available/xsuportal.conf
+    state: link
+
 #- name: Deploy env shellscript
 #  become: yes
 #  become_user: isucon
