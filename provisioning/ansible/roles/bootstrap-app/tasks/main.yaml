@@ -77,32 +77,25 @@
     src: /etc/nginx/sites-available/xsuportal.conf
     state: link
 
-#- name: Deploy env shellscript
-#  become: yes
-#  become_user: isucon
-#  copy:
-#    src: "env.sh"
-#    dest: /home/isucon
-#
-## nginx 解析ツール
-#- name: Copy alp
-#  become: yes
-#  become_user: root
-#  copy:
-#    src: "alp" # https://github.com/tkuchiki/alp/releases/download/v1.0.5/alp_linux_amd64.zip
-#    dest: /usr/bin
-#    mode: "0755"
-#
-#- name: Copy alp_with_uri_grouping.yml
-#  become: yes
-#  become_user: isucon
-#  copy:
-#    src: "alp_with_uri_grouping.yml"
-#    dest: /home/isucon
-#
-#- name: Copy alp_without_grouping.yml
-#  become: yes
-#  become_user: isucon
-#  copy:
-#    src: "alp_without_grouping.yml"
-#    dest: /home/isucon
+# nginx 解析ツール
+- name: Copy alp
+  become: yes
+  become_user: root
+  copy:
+    src: "alp" # https://github.com/tkuchiki/alp/releases/download/v1.0.5/alp_linux_amd64.zip
+    dest: /usr/bin
+    mode: "0755"
+
+- name: Copy alp_with_uri_grouping.yml
+  become: yes
+  become_user: isucon
+  copy:
+    src: "alp_with_uri_grouping.yml"
+    dest: /home/isucon
+
+- name: Copy alp_without_grouping.yml
+  become: yes
+  become_user: isucon
+  copy:
+    src: "alp_without_grouping.yml"
+    dest: /home/isucon

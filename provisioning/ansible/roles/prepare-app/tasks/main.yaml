@@ -13,13 +13,6 @@
     state: "restarted"
     enabled: "yes"
 
-- name: Start "envoy"
-  systemd:
-    daemon_reload: "yes"
-    name: "envoy"
-    state: "stopped"
-    enabled: "yes"
-
 - name: Start "nginx"
   systemd:
     daemon_reload: "yes"
