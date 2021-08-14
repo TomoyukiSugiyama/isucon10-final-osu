@@ -5,8 +5,8 @@ file: /var/log/nginx/access.log
 sort: count
 limit: 20000
 reverse: true
-percentiles: 50,90,99
-output: count,1xx,2xx,3xx,4xx,5xx,method,uri,sum,avg,max,min,p90,p95,p99,sum_body,avg_body,max_body,min_body
+percentiles: [50,90,99]
+output: count,1xx,2xx,3xx,4xx,5xx,method,uri,sum,avg,max,min,p50,p90,p99,sum_body,avg_body,max_body,min_body
 ltsv: {}
 json: {}
 regexp: {}
